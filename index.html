@@ -12,14 +12,14 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 <body>
-	<header>
-		<div class="logo">
-			<a class="logox" href="#hero">
+	<header id="navbar">
+					<a class="logox" href="#hero">
+
+		<div id="logo" class="logo">
 				<img src="images/logo-pv.png">
-			</a>
-		</div>
-		<nav>
-			<ul>
+		</div>			</a>
+		<nav id="nav" class="hidden">
+			<ul class="">
 				<li class="nav-about"><a href="#about"><span>o mnie</span><i class="far fa-user"></i></a></li>
 				<li class="nav-skills"><a href="#skills"><span>umiejętności</span><i class="far fa-check-circle"></i><!-- <i class="far fa-edit"></i> --></a></li>
 				<li class="nav-projects"><a href="#projects"><span>projekty</span><i class="far fa-eye"></i></a></li>
@@ -27,55 +27,99 @@
 			</ul>
 		</nav>
 	</header>
-	<section class="hero section-general">
+	<section class="hero-section section-general" id="hero">
 		<div class="title">
-			<h2>adrianna</h2>
-			<h1>rochmalska</h1>
-			<h3>junior frontend developer portfolio</h3>
+			<h2 id="h2">adrianna</h2>
+			<h1 id="h1">rochmalska</h1>
+			<h3 id="h3">front-end developer portfolio</h3>
+			<!-- <h4 id="h4">junior</h4> -->
+			<!-- <h5 id="h5">kolejny...</h5> -->
 		</div>
 		<button>kontakt</button>
 	</section>
-	<section class="about section-general">
+	<div id="hero-parallax"></div>
+	<section class="about-section section-general" id="about">			
+		<h2>Kim jestem?</h2>
 		<div class="about-img">
-			<img src="images/ada.jpg">
+			<img class="about-img-img" src="images/a1.png">
 		</div>
 		<div class="about-caption">
-			<h2>Kim jestem?</h2>
-			<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
 		</div>
 	</section>
-	<section class="skills section-general">
-		<div>
-			<i class="fab fa-html5"></i>
-			<h3>html5</h3>
-			<p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio</p>
-		</div>		
-		<div>
-			<i class="fab fa-css3-alt"></i>
-			<h3>css3</h3>
-			<p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio</p>
-		</div>		
-		<div>
-			<i class="fab fa-js"></i>
-			<h3>java script</h3>
-			<p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio</p>
-		</div>		
-		<div>
-			<i class="fab fa-css3-alt"></i>
-			<h3>jquery</h3>
-			<p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio</p>
-		</div>		
-		<div>
-			<i class="fab fa-css3-alt"></i>
-			<h3>bootstrap</h3>
-			<p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio</p>
-		</div>		
-		<div>
-			<i class="fab fa-css3-alt"></i>
-			<h3>github</h3>
-			<p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio</p>
+	<section class="section-general skills-section" id="skills">
+		<h2>Technologie i umiejętności</h2>
+		<div class="skills-content">
+			<div class="skills-1">
+				<div class="skill-icon">
+					<i class="fab fa-html5"></i>
+				</div>
+				<h3>HTML5</h3>
+			</div>		
+			<div class="skills-2">
+				<div class="skill-icon">
+					<i class="fab fa-css3-alt"></i>
+				</div>
+				<h3>CSS3</h3>
+			</div>		
+			<div class="skills-3">
+				<div class="skill-icon">
+					<i class="fab fa-sass"></i>
+				</div>
+				<h3>SASS</h3>
+			</div>		
+			<div class="skills-4">
+				<div class="skill-icon">
+					<i class="fab fa-js-square"></i>
+				</div>
+				<h3>JavaScript</h3>			
+			</div>		
+			<div class="skills-5">
+				<div class="skill-icon">
+					<img src="images/icon-jq.png">
+				</div>
+				<h3>jQuery</h3>			
+			</div>		
+			<div class="skills-6">
+				<div class="skill-icon">
+					<img src="images/icon-boot2.png">
+				</div>
+				<h3>Bootstrap</h3>
+			</div>
+			<div class="skills-7">
+				<div class="skill-icon">
+					<i class="fab fa-github"></i>
+				</div>
+				<h3>Git/Github</h3>
+			</div>
+			<div class="skills-8">
+				<div class="skill-icon">
+					<i class="fab fa-npm"></i>
+				</div>
+				<h3>NPM</h3>
+			</div>
+			<div class="skills-9">
+				<div class="skill-icon">
+					<img src="images/icon-gimp.png">
+				</div>
+				<h3>Gimp</h3>			
+			</div>
+			<div class="skills-10">
+				<div class="skill-icon skill-icon-rwd">
+					<!-- <i class="fas fa-expand-arrows-alt"></i> -->
+					<i class="fas fa-arrows-alt-h"></i>
+				</div>
+				<h3>RWD</h3>
+			</div>		
+			<div class="skills-11">
+				<div class="skill-icon">
+					<!-- <i class="fas fa-ellipsis-h"></i> -->
+					<!-- <i class="fab fa-leanpub"></i> -->
+					<i class="fas fa-tasks"></i>
+					<!-- <i class="fas fa-spinner"></i> -->
+				</div>
+				<h3>ciągła nauka ...</h3>
+			</div>
 		</div>
-		
 	</section>
 
 
@@ -91,7 +135,7 @@
 
 
 
-				<!-- <h1><span>ABCDEFGHIKJ</span></h1> -->
+				<!-- <h1><span>ABCDEFGHIKJ</span></h1>
 
 <!-- 				<svg viewbox="0 -10 100 60">
 				  <defs>
