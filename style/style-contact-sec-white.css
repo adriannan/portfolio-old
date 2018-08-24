@@ -233,26 +233,19 @@ nav ul li i{
 
 	/*transform: translate(4em, 4em);*/
 }
-.button-transf, .button-top{	
+.button-transf, .button-cv{	
 	/*border: 1px solid #fff;*/
 	background: #fff;
 	opacity: .8;
 	color: #bd1a3a;
 }
-.button-transf:hover, .button-top:hover{
+.button-transf:hover, .button-cv:hover{
 	opacity: 1;
 }
 .button-cv{
 	font-size: 1.2em;
 	font-weight: bold;
 	padding: 1em 2em;
-}
-.button-top{
-	padding: 1.4em 2.4em;
-	position: fixed;
-	bottom: 1.2em;
-	right: 1.2em;
-	display: none;
 }
 .hero-section .color{
 	top: 10px;
@@ -315,15 +308,15 @@ nav ul li i{
 	align-self: flex-start;
 	/*top: .6em;*/
 }
-.about-section h2, .projects-section h2{
+.about-section h2, .projects-section h2, .contact-section h2{
 	color: rgb(189, 26, 58);
 }
-.about-section h2:before, .projects-section h2:before{
+.about-section h2:before, .projects-section h2:before, .contact-section h2:before{
 	/*box-shadow: 0px 1em 2.2em -1.8em rgb(189, 26, 58) inset;*/
 	box-shadow: 0px 10px 20px -18px rgb(189, 26, 58) inset;
 	/*opacity: .6;*/
 }
-.about-section, .cv-content{
+.about-section, .contact-section{
 	background-color: #fff;
 	height: auto;
 	max-width: 100vw;
@@ -375,10 +368,10 @@ nav ul li i{
 	z-index: -1;
 	white-space: nowrap;
 }
-.cv-content:before{
-	content: 'curriculum vitae';
+.contact-section:before{
+	content: 'kontakt';
 	position: absolute;
-  	top: 50%;
+  	top: 80%;
   	line-height: 10%;
   	left: -18%;
 	width: 100%;
@@ -392,7 +385,6 @@ nav ul li i{
 	z-index: -1;
 	white-space: nowrap;
 }
-
 
 .about-img{
 	margin: 3vw 5vw;
@@ -428,7 +420,7 @@ nav ul li i{
 	bottom: 2em;
 }
 
-.skills-section, .contact-section, .footer{
+.skills-section, .cv, .footer{
 	/*background: linear-gradient(95deg, rgb(116, 0, 37), rgb(206, 0, 39));*/
 	/*background: linear-gradient(95deg, rgba(116, 0, 37, .7), rgba(206, 0, 39, .7));*/
 	background: linear-gradient(45deg, rgb(189, 26, 58), rgb(255, 10, 102), rgb(107, 33, 125));
@@ -436,8 +428,8 @@ nav ul li i{
 	color: #fff;
 	height: auto;
 }
-.cv-content{
-	height: 8em;
+.cv{
+	height: 10em;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -699,7 +691,7 @@ nav ul li i{
 	content: '';
 	height: 100%;
 	width: 100%;
-	opacity: .7;
+	opacity: .6;
 
 	/*background: linear-gradient(45deg, rgb(189, 26, 58), rgb(255, 10, 102), rgb(107, 33, 125));*/
 	background: linear-gradient(45deg, rgb(189, 26, 58), rgb(255, 10, 102), rgb(107, 33, 125) 90%);
@@ -735,67 +727,75 @@ nav ul li i{
 	transition: .2s ease-out;
 }
 
-.contact-content{
+.social-content{
+	/*position: absolute;*/
+	/*bottom: 0;*/
+	/*height: 5em;*/
+	max-width: 300px;
+	width: 100%;
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
+	/*background: linear-gradient(45deg, rgb(189, 26, 58), rgb(255, 10, 102), rgb(107, 33, 125));*/
+	/*background-attachment: fixed;*/
+}
+.social-content a{
+	color: pink;
+	opacity: .6;
+	padding: 0em .5em;
+	font-size: 1.4em;
+	text-align: center;
+}
+.social-content a:hover{
+	opacity: 1;
+	cursor: pointer;
+	transform: scale(1.1);
+}
+.contact-content{
+	/*display: flex;*/
+	/*flex-direction: row;*/
+	flex-wrap: wrap;
+	position: relative;
 	overflow: hidden;
-	/*width: 80%;*/
+	background-color: transparent;
+	width: 80%;
 	max-width: 1200px;
 	padding: 3vw;
 	font-family: 'baskerville', serif;
 }
-.contact-item{
-	width: 20vw;
+.contact-list dt{
+	text-transform: capitalize;
+	font-size: 1.4em;
 }
-.contact-item a{
-	height: 8em;
+.contact-list, .contact-list dt, .contact-list dd{
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-	color: #fff;
-		opacity: .6;
+	flex-wrap: wrap;
+	justify-content: center;
+	/*align-items: center;*/
+}
+	
+.contact-list{
+	height: 6em;
+}
 
-	padding: 0em .5em;
-	font-size: 1.4em;
-	text-align: center;
+.contact-list dt{
+	height: 2em;
+	justify-content: flex-start;
+}
+.contact-list dd{
+	height: 3em;
+	padding-left: 2em;
+}
+.contact-list a{
 	text-decoration: none;
-		transition: .2s ease-out;
-
-}
-
-.contact-item a:hover{
-	opacity: 1;
-	cursor: pointer;
-		transition: .2s ease-out;
-
-
-}
-.contact-item a:hover i, .contact-item a:hover p{
-	transform: scale(1.1);
-		transition: .2s ease-out;
-			/*text-shadow: 0px 0px 1px #fff;*/
-}
-.contact-item p{
-	font-size: .8em;
-	height: 1em;
-
-}
-.contact-item i{
-	font-size: 1.8em;
-
-}
-.contact-item h4{
-	text-transform: capitalize;
-	font-size: 1em;
-
+	font-size: 1.2em;
+	color: inherit;
 }
 .footer{
 	background-color: #262626;
 	height: 10vh;
-	min-height: 5em;
+	min-height: 3em;
 	font-size: 1em;
 	color: #fff;
 	display: flex;
