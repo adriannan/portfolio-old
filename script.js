@@ -11,8 +11,10 @@
 		var heroSect = document.getElementById('hero');
 		var aboutSect = document.getElementById('about');
 		var skillsSect = document.getElementById('skills');
+		var projectSect = document.getElementById('projects');
 		var contactBtn = document.getElementById('contact-button');
 		var aboutBtn = document.getElementById('about-button');
+		var topBtn = document.getElementById('top-button');
 		var aboutMore = document.getElementById('about-more');
 		var skillsItem = document.querySelectorAll('.skills-item');
 		var skillsItemCapt = document.querySelectorAll('.skills-item-caption');
@@ -70,13 +72,14 @@ window.addEventListener('scroll', function(){
 	var heroSectPos = heroSect.getBoundingClientRect().bottom;
 	var aboutSectPos = aboutSect.getBoundingClientRect().bottom;
 	var skillsSectPos = skillsSect.getBoundingClientRect().bottom;
+	var projectSectPos = projectSect.getBoundingClientRect().bottom;
 
 	if(heroSectPos<=contactBtnPos){
 		contactBtn.classList.add('button-transl');
-
 	} else{
 		contactBtn.classList.remove('button-transl');
 	}
+
 
 	if(aboutSectPos<=contactBtnPos){
 		contactBtn.classList.add('button-transf');
@@ -95,6 +98,16 @@ window.addEventListener('scroll', function(){
 		// contactBtn.classList.add('button-transf');
 	}
 
+	// hidden button on contact section
+	if(projectSectPos<=contactBtnPos){
+		contactBtn.style.visibility = 'hidden';
+		topBtn.style.display = 'block';
+
+	} else{
+		contactBtn.style.visibility = 'visible';
+		topBtn.style.display = 'none';
+
+	}
 
 	function transformContactBtn(){	
 		contactBtn.classList.add('button-transf');
