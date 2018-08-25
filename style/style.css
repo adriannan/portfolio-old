@@ -472,17 +472,7 @@ nav ul li i{
 	overflow-y: scroll;
 	font-family: monospace;
 }
-.skill-caption h3{
-	/*font-size: 1.2em;*/
-	/*font-weight: 600;*/
-	/*text-shadow: 0px 0px 1px #fff;*/
-	width: auto;
-	font-family: 'Roboto', sans-serif;
-	text-align: center;
-	border-top: 1px solid #fff;
-	padding-top: .5em;
-	margin-top: .5em;
-}
+
 .projects-section{
 	position: relative;
 	overflow: hidden;
