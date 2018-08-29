@@ -5,10 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "npm run test:html",
-    "test:html": "nu-html-checker *.html",
+    "test:html": "npm/node_modules/.bin/nu-html-checker *.html",
     "build": "npm run build:sass && npm run build:autoprefixer && npm run test",
-    "build:sass": "sass --sourcemap=none --update sass:css",
-    "build:autoprefixer": "autoprefixer-cli style/style.css"
+    "build:sas": "sass --sourcemap=none --update sass:css",
+    "build:sass": "sass --watch style/style.scss:style/style.css",
+    "build:autoprefixer": "npm/node_modules/.bin/autoprefixer-cli -o style/style.prefixed.css style/style.css",
+    "build:clean": "npm/node_modules/.bin/cleancss -o style/style.prefixed.min.css style/style.prefixed.css",
+    "watch": "npm/node_modules/.bin/browser-sync start --server --files style/*.css *.html scripts/*.js"
   },
   "repository": {
     "type": "git",
@@ -24,8 +27,13 @@
   "dependencies": {
     "autoprefixer-cli": "^1.0.0",
     "browser-sync": "^2.24.4",
+    "node-minify": "^3.4.0",
     "normalize.css": "^8.0.0",
     "nu-html-checker": "^0.1.0",
     "onchange": "^4.0.0"
+  },
+  "devDependencies": {
+    "clean-css": "^4.2.1",
+    "clean-css-cli": "^4.2.1"
   }
 }
