@@ -12,7 +12,7 @@ I've added the code to Github, so that prospective employers <br> or recruiters 
 - my skills
 - projects 
 - social media links
-- contact informations 
+- contact information 
 - cv
 
 <hr>
@@ -25,8 +25,7 @@ I've added the code to Github, so that prospective employers <br> or recruiters 
 ### Tools
 - SASS
   - .scss -> .css
-- NPM
-	I used task runner: 
+- NPM - I used task runner: 
     - `browser-sync`
   	- `autoprefixer-cli`
   	- `cleancss`
@@ -35,11 +34,11 @@ I've added the code to Github, so that prospective employers <br> or recruiters 
 
 #### Moreover
 - RWD 
-  - i built responsive website with `media queries` and `flex-box'
+  - I built a responsive website with `media queries` and `flex-box`
 - hand-lettered logo
     <img src="https://github.com/adriannan/portfolio/blob/master/images/logo-ar.png?raw=true" align="right"
      title="logo" width="100" height="auto">
-  - i created letters on paper, digitalized them, cleaned up edge and refined in Gimp
+  - I created letters on paper, digitalized them, cleaned up edge and refined in Gimp
       
 - Parallax background
   - made with Kirupa Chinnathambi's tutorial
