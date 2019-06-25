@@ -69,7 +69,7 @@ header {
         -ms-flex-align: center;
             align-items: center; }
         header nav ul li a {
-          font-family: "Roboto", sans-serif;
+          font-family: "helvetica", sans-serif;
           font-size: .6em;
           height: 100%;
           display: -ms-flexbox;
@@ -200,7 +200,7 @@ header {
   text-transform: uppercase;
   color: #fff;
   font-size: .8em;
-  font-family: "Roboto", sans-serif;
+  font-family: "helvetica", sans-serif;
   transition: .2s ease-out; }
 
 .button-cont {
@@ -266,7 +266,7 @@ header {
   margin-left: 2em;
   margin-bottom: 2em;
   text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
+  font-family: "helvetica", sans-serif;
   position: relative;
   -ms-flex-item-align: start;
       align-self: flex-start; }
@@ -387,7 +387,7 @@ header {
   transform: rotate(-45deg); }
 
 .skill-icon + h3 {
-  font-family: "Roboto", sans-serif;
+  font-family: "helvetica", sans-serif;
   padding: 1.6em; }
 
 .skills-1 {
