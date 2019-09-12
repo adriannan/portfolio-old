@@ -6,16 +6,17 @@ function setTranslate(xPos, yPos, el) {
 }
 
 function scrollLoop() {
-  let xScrollPosition = window.scrollX;
   let yScrollPosition = window.scrollY;
+  if (yScrollPosition < 600) {
+    setTranslate(yScrollPosition * -8, 0, document.querySelector("#h2"));
+    setTranslate(yScrollPosition * 10, 0, document.querySelector("#h3"));
+    setTranslate(
+      0,
+      yScrollPosition * -0.5,
+      document.querySelector("#hero-parallax")
+    );
+  }
 
-  setTranslate(yScrollPosition * -8, 0, document.querySelector("#h2"));
-  setTranslate(yScrollPosition * 10, 0, document.querySelector("#h3"));
-  setTranslate(
-    0,
-    yScrollPosition * -0.5,
-    document.querySelector("#hero-parallax")
-  );
   requestAnimationFrame(scrollLoop);
 }
 
